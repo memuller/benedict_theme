@@ -28,7 +28,7 @@
 			<li><?php next_post_link('%link', __('<span class="pictogram post-nav">&#59226;</span> Next', 'themelovin')); ?></li>
 		</ul>
 	</article>
-	<?php comments_template(); ?>
+	<?php if(in_array($pedia->post_format, array('reference', 'tool', 'term'))) comments_template(); ?>
 </div>
 <aside class="col span_3" style="margin-top: <?php echo $spacing ?>px;">
 	<?php require 'widgets/pedia.php' ?>
