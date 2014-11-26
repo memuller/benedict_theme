@@ -216,7 +216,7 @@ if (function_exists('add_image_size')) :
 	add_image_size('inner-blog', 655);
 	add_image_size('team', 210, 210, true);
 	add_image_size('header', 1400, 600);
-	add_image_size('header_short', 1400, 300);
+	add_image_size('header_short', 1400, 400);
 endif;
 
 if(!function_exists('glg_excerpt_more')) :
@@ -380,7 +380,7 @@ if(!function_exists('glg_post_header')) :
 		if(get_post_meta( $id, 'image_header', true) == 1) {
 			$output = '<div class="flexslider" id="header-slider"><ul class="slides">';
 			$thumb = get_post_thumbnail_id( $id );
-			$url = wp_get_attachment_image_src( $thumb, 'header_short');
+			$url = wp_get_attachment_image_src( $thumb, 'full');
 			$output .= '<li style="height:400px; display: block;"><div class="image" style="background-image: url('.$url[0].'); height:400px;"></div></li>';
 			$output .= '</ul></div>';
 		}
