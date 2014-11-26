@@ -14,10 +14,12 @@
 			<em>isto é <?php echo $feminine ? 'uma' : 'um' ?></em>
 			<span><?php echo $format_labels[$pedia->post_format] ?></span>
 		</span>
-		<span class="date meta">
-			<?php inline_svg('/images/icons/date.svg', 'icon') ?>
-			<span><?php the_date() ?></span>
-		</span>
+		<?php if(in_array($pedia->post_type, array('term'))){ ?>
+			<span class="date meta">
+				<?php inline_svg('/images/icons/date.svg', 'icon') ?>
+				<span><?php the_date() ?></span>
+			</span>
+		<?php } ?>
 		<?php if (has_tag()) { ?>
 			<span class="tags meta">
 				<?php inline_svg('/images/icons/tag.svg', 'icon') ?>
