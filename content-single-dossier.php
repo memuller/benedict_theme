@@ -30,7 +30,7 @@
 					</span>
 					<a class="tool" href="<?php echo $tool->permalink ?>"><?php echo strtolower($tool->title); ?></a>
 					<br/>
-					<h4><a href="<?php echo $evidence->URL ?>">
+					<h4><a href="<?php echo $evidence->url ?>">
 						<?php echo $evidence->title ?>
 					</a></h4>
 					
