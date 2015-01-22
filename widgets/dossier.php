@@ -14,10 +14,10 @@
 			<em>datas</em>
 			<span class="field"><a href="<?php echo $dossier->calendar ?>">Google Calendar</a></span>
 		</span>
-		<span class="meta field no-icon">
+<!-- 		<span class="meta field no-icon">
 			<em>arquivos</em>
 			<span class="field"><a href="<?php echo $dossier->folder; ?>">Google Drive</a></span>
-		</span>
+		</span> -->
 		<span class="meta field no-icon">
 			<em>contato</em>
 			<span class="field"><a href="<?php echo $contact->email ?>"><?php echo $contact->title ?></a></span>
