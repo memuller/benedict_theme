@@ -15,9 +15,9 @@
 			<span class="field"><?php the_('phase') ?></span>
 		</span>
 
-		<span class="meta field no-icon">
+<!-- 		<span class="meta field no-icon">
 			<em>valor</em>
 			<span class="field"><?php echo $pedia->cost . ' b$' ?></span>
-		</span>
+		</span> -->
 	</div>
 </div>
