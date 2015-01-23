@@ -6,6 +6,7 @@
  * @subpackage Bloq
  * @since Bloq 1.0
  */
+//touches self.
 $page_id = get_option('page_for_posts');
 $subtitle = get_post_meta($page_id, 'glg_page_subtitle', true);
 $header = '';
